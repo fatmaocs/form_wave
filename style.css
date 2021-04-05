@@ -67,6 +67,13 @@ form input[type="button"]
     background-color: #ADD8E6;
     padding:10px 0px;
     border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+form input[type="button"]:focus
+{
+    outline: 0;
 }
 
 form span a{
