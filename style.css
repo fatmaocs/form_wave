@@ -1,0 +1,89 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100vh;
+    color: white;
+    background-color: #4682B4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+}
+
+
+form
+{
+    height: 70vh;
+    width: 30vw;
+    background-color: #2A4E6C;
+    padding: 0px 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+form h2{
+    margin: 0;
+}
+
+form input:not([type="button"])
+{
+    border: 0;
+    border-bottom: 2px solid white;
+    background: transparent;
+    color: white;
+    padding-bottom: 10px;
+    font-size: 18px;
+    width: 100%;
+
+}
+
+form input:not([type="button"]):focus
+{
+    outline: none;
+}
+
+form .form_control{
+
+    position: relative;
+}
+
+ .form_control label{
+
+   position: absolute;
+   top: 0;
+   left: 0px;
+}
+
+form input[type="button"]
+{
+    background-color: #ADD8E6;
+    padding:10px 0px;
+    border-radius: 5px;
+}
+
+form span a{
+    color: #9FCAD9;
+    text-decoration: none;
+}
+
+
+.form_control  label span
+{
+    display: inline-block;
+    font-size: 18px;
+    /* cubic-bezier(x1,y1,x2,y2) */
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+input:focus + label span
+{
+    color: lightblue;
+    transform: translateY(-30px);
+}
